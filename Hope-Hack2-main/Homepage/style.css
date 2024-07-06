@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F6E6CB; /* Light background color */
+}
+
+/* Header and Navbar Styling */
+.App-header {
+    background-color: rgba(182, 199, 170, 0.9); 
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.App-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.App-header a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+  width: 18%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+
+
+
+/* Hero Section Styling */
+#home {
+    position: relative;
+    background: url('../Images/hero-image.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 19% 20px;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#home h1,
+#home p,
+#home button {
+    position: relative;
+    z-index: 2;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+#home p {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#home button {
+    background-color: #9a392e;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#home button:hover {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fffdfd;
+}
+
+#air-quality-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#air-quality-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#air-quality-info p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #home {
+        padding: 150px 0;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 30px 10px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .solutions {
+        margin-bottom: 50px;
+    }
+
+    .solution-box {
+        max-width: 100%;
+    }
+
+    .impact-content {
+        padding: 30px;
+        margin: 50px 0;
+    }
+
+    .impact-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .impact-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1200px) {
+    .solutions {
+        justify-content: space-between;
+    }
+
+    .solution-box {
+        max-width: 20%;
+    }
+
+    .impact-content {
+        padding: 100px;
+    }
+
+    .impact-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .impact-content p {
+        font-size: 1.2rem;
+    }
+}
